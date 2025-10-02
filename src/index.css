@@ -63,6 +63,57 @@ All colors MUST be HSL.
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .light {
+    /* Command Center Light Theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Emergency Response Colors */
+    --critical: 0 84% 55%;
+    --critical-foreground: 0 0% 100%;
+    --critical-glow: 0 84% 65%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-glow: 38 92% 60%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-glow: 142 76% 46%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 70%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Elevation and Shadows */
+    --shadow-critical: 0 0 30px hsl(var(--critical) / 0.2);
+    --shadow-warning: 0 0 25px hsl(var(--warning) / 0.2);
+    --shadow-success: 0 0 20px hsl(var(--success) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.2);
+  }
 }
 
 @layer base {

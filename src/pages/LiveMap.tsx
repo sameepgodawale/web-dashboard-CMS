@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { EmergencyMap } from '@/components/EmergencyMap';
+import { LeafletMap } from '@/components/LeafletMap';
 import { AccidentAlert } from '@/types/emergency';
 import { initialMockAlerts, generateMockAccident } from '@/lib/mockData';
 
@@ -27,8 +27,8 @@ const LiveMap = () => {
         </div>
       </div>
       
-      <div className="h-[calc(100vh-4rem)]">
-        <EmergencyMap
+      <div className="h-[calc(100vh-4rem)] p-4">
+        <LeafletMap
           alerts={alerts}
           selectedAlert={selectedAlert}
           onSelectAlert={setSelectedAlert}

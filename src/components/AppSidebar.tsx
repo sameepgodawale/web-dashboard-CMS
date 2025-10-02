@@ -6,7 +6,8 @@ import {
   ScrollText, 
   Activity, 
   Settings, 
-  Shield 
+  Shield,
+  Users
 } from 'lucide-react';
 import {
   Sidebar,
@@ -55,6 +56,11 @@ const menuItems = [
     title: 'Admin Panel',
     url: '/admin',
     icon: Shield,
+  },
+  {
+    title: 'User Management',
+    url: '/user-management',
+    icon: Users,
   },
 ];
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AlertTriagePanel } from '@/components/AlertTriagePanel';
-import { EmergencyMap } from '@/components/EmergencyMap';
+import { LeafletMap } from '@/components/LeafletMap';
 import { SystemHealthBar } from '@/components/SystemHealthBar';
 import { ResponseTimer } from '@/components/ResponseTimer';
 import { AccidentAlert } from '@/types/emergency';
@@ -175,7 +175,7 @@ const Index = () => {
       <main className="flex-1 flex overflow-hidden">
         {/* Map Section - 70% width */}
         <div className="flex-1 p-6">
-          <EmergencyMap
+          <LeafletMap
             alerts={alerts}
             selectedAlert={selectedAlert}
             onSelectAlert={handleSelectAlert}
