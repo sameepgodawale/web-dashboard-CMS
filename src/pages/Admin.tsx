@@ -2,7 +2,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Shield, Users, Bell, Database } from 'lucide-react';
+import { Shield, Bell, Database } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
 const Admin = () => {
@@ -102,35 +102,6 @@ const Admin = () => {
                   How often to update real-time map data
                 </p>
               </div>
-            </div>
-          </Card>
-
-          <Card className="p-6">
-            <div className="flex items-center gap-3 mb-6">
-              <Users className="w-5 h-5 text-primary" />
-              <h3 className="text-lg font-bold">User Management</h3>
-            </div>
-            
-            <div className="space-y-3">
-              <div className="flex items-center justify-between p-3 border border-border rounded-lg">
-                <div>
-                  <div className="font-medium">admin@v2x.local</div>
-                  <div className="text-xs text-muted-foreground">Administrator</div>
-                </div>
-                <Button variant="outline" size="sm">Edit</Button>
-              </div>
-              
-              <div className="flex items-center justify-between p-3 border border-border rounded-lg">
-                <div>
-                  <div className="font-medium">operator@v2x.local</div>
-                  <div className="text-xs text-muted-foreground">Operator</div>
-                </div>
-                <Button variant="outline" size="sm">Edit</Button>
-              </div>
-
-              <Button variant="outline" className="w-full">
-                Add New User
-              </Button>
             </div>
           </Card>
 
